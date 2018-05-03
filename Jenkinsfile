@@ -11,7 +11,8 @@ pipeline {
       steps {
         echo 'building infra'
         ws(dir: '/var/lib/jenkins/demo1') {
-          sh '''pwd
+          sh '''cd /var/lib/jenkins/demo1
+pwd
 ./iac_test_new.sh
 '''
         }
